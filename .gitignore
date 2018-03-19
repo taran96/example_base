@@ -1,0 +1,14 @@
+*.sqlite3
+.DS_Store
+node_modules/
+
+*.swp
+*.swo
+
+.env
+.vscode/
+.\#*
+
+*.pyc
+
+__pycache__/
