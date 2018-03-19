@@ -12,11 +12,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
 
     # Third Party
     'channels',
     'rest_framework',
     'rest_framework.authtoken',  # for token authentication
+    'rest_auth',
+    'allauth',
+    'allauth.account',
+    'rest_auth.registration',
 
     # Project
     'users',
@@ -75,6 +80,7 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 STATIC_URL = '/static/'
+SITE_ID = 1
 
 # Channels Configuration
 ASGI_APPLICATION = 'example_base.routing.application'  # Not sure why this points to routing.py instead of asgi.py
