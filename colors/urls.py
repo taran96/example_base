@@ -3,8 +3,8 @@ from . import views
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register('colors', views.ColorView)
+router.register('', views.ColorView)
 
 urlpatterns = [
-    path('list', include(router.urls)),
+    path('', include(router.urls)),
 ]

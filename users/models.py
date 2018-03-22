@@ -4,4 +4,4 @@ from colors.models import Color
 
 
 class User(AbstractUser):
-    pass  # Get rid of this when you add the missing field
+    pass
